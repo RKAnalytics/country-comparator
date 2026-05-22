@@ -1,3 +1,4 @@
+import { useState } from "react";
 export default function SearchBar({ onSearch, loading }) {
   const [query, setQuery] = useState("");
 

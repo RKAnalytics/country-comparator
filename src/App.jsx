@@ -1,3 +1,4 @@
+import LoadingSpinner from "./components/LoadingSpinner";
 import { useState } from "react";
 import { searchCountry } from "./api/countries";
 import SearchBar from "./components/SearchBar";
@@ -46,6 +47,8 @@ export default function App() {
 
       <SearchBar onSearch={handleSearch} loading={loading} />
       {error && <ErrorMessage message={error} onDismiss={() => setError(null)} />}
+
+      {loading && <LoadingSpinner />}
 
       {countries.length === 0 && !loading && (
         <p className="text-center text-gray-400 mt-20">Search a country above to start comparing.</p>

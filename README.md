@@ -1,16 +1,23 @@
-# React + Vite
+# Country Comparator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Compare up to 4 countries side by side — population, area, capital, languages, currencies, and flags.
 
-Currently, two official plugins are available:
+Built on the [REST Countries API](https://restcountries.com). No API key required.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run on a fresh machine
 
-## React Compiler
+**Prerequisites:** Node.js 18+
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone https://github.com/yourusername/country-comparator
+cd country-comparator
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open http://localhost:5173 in your browser.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+- Search any country by name
+- Compare up to 4 countries side by side
+- Handles API errors, timeouts, duplicate entries, and invalid input
